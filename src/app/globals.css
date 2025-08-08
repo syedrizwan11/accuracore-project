@@ -1,26 +1,23 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background-image: radial-gradient(
+    ellipse 40% 100% at center top,
+    rgba(69, 107, 160, 0.7) 0%,
+    rgba(var(--blueDeepDark-rgb), 0.9) 70%,
+    rgba(var(--blueDeepDark-rgb), 1) 100%
+  );
   --foreground: #171717;
+  --blueDeepDark: rgb(29, 31, 78);
+  --blueDeepDark-rgb: 26, 44, 70;
+  --blueLight: rgba(69, 107, 160, 0.7);
 }
 
 @theme inline {
-  --color-background: var(--background);
+  --background-image-background: var(--background-image);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  --color-blueDeepDark: var(--blueDeepDark);
+  --color-blueLight: var(--blueLight);
 }

@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils"
 const slides = [
   {
     title: "Work Order Management",
-    image: "/images/Hero Image.png",
+    image: "/images/work-order-management.png",
   },
   {
     title: "Smart Dashboard",
@@ -52,7 +52,7 @@ export const ImageCarousalWithTabs = () => {
         ))}
       </div>
 
-      <div className="relative w-full max-w-6xl h-[500px] flex items-center justify-center">
+      <div className="relative w-full max-w-6xl sm:h-[500px] h-[300px] flex items-center justify-center">
         {slides.map((slide, index) => {
           const isActive = index === activeIndex
           const isPrev = index === getPrevIndex()

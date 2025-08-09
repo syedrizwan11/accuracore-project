@@ -3,27 +3,6 @@
 
 @custom-variant dark (&:is(.dark *));
 
-* {
-  scrollbar-width: thin; /* Firefox */
-  scrollbar-color: #2f1893 #a2a0c7; /* Firefox */
-}
-
-*::-webkit-scrollbar {
-  width: 12px;
-  height: 12px;
-}
-
-*::-webkit-scrollbar-track {
-  background: #a2a0c7;
-  border-radius: 6px;
-}
-
-*::-webkit-scrollbar-thumb {
-  background-color: #2f1893;
-  border-radius: 6px;
-  border: 3px solid #f0f0f0;
-}
-
 :root {
   --background-image: radial-gradient(
     ellipse 40% 100% at center top,
@@ -37,7 +16,7 @@
   --blueDark: #0b56ac;
 
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
+  --background: oklch(97.023% 0.00426 15.806);
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
@@ -69,7 +48,9 @@
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
   --text-sm: 0.65rem;
+  --text-msm: 0.8rem;
   --text-md: 1rem;
+  --text-heading: 2rem;
 }
 
 @theme inline {
@@ -86,7 +67,9 @@
   --font-sora: var(--font-sora);
   --font-outfit: var(--font-outfit);
   --text-sm: var(--text-sm);
+  --text-msm: var(--text-msm);
   --text-md: var(--text-md);
+  --text-heading: var(--text-heading);
 
   --spacing-contentStart: 7.5rem;
   --breakpoint-large: 60rem;
@@ -194,6 +177,26 @@
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
 }
+* {
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #d6d5f1 #2f1893; /* Firefox */
+}
+
+*::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #2f1893;
+  border-radius: 6px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #d6d5f1;
+  border-radius: 6px;
+  border: 3px solid #f0f0f0;
+}
 
 @layer base {
   * {
@@ -202,4 +205,8 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+strong {
+  font-weight: 600;
 }

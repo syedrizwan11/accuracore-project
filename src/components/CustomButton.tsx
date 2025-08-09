@@ -1,6 +1,5 @@
 "use client"
 import { ReactNode } from "react"
-import { cn } from "@/utilities/cn"
 
 interface CustomButtonProps {
   text: string

@@ -1,3 +1,4 @@
+"use client"
 import { ReactNode } from "react"
 import { cn } from "@/utilities/cn"
 
@@ -7,6 +8,8 @@ interface CustomButtonProps {
   iconPosition: "left" | "right"
   color?: string
   bgColor?: string
+
+  onClickHandler?: () => void
 }
 export const CustomButton = ({
   text,
@@ -14,14 +17,16 @@ export const CustomButton = ({
   iconPosition,
   color,
   bgColor,
+  onClickHandler,
 }: CustomButtonProps) => {
   return (
     <div
       className={cn(
-        "p-3 rounded-full px-5 flex justify-center items-center w-fit gap-2 text-[14px]",
-        color ? `text-${color}` : "text-blueDeepDark",
-        bgColor ? `bg-${bgColor}` : "bg-white"
+        "p-3 rounded-full px-5 flex justify-center items-center w-fit gap-2 text-sm cursor-pointer",
+        color ? `text-${color}` : "text-white",
+        bgColor ? `bg-${bgColor}` : "bg-blueDark"
       )}
+      onClick={onClickHandler}
     >
       {iconPosition === "left" && icon}
       {text}

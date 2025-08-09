@@ -1,15 +1,19 @@
 import type { Metadata } from "next"
-import { Geist, Geist_Mono } from "next/font/google"
+import { Sora, Outfit } from "next/font/google"
 import "./globals.css"
+import { SiteHeader } from "@/components/SiteHeader"
+import { SiteFooter } from "@/components/SiteFooter"
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const sora = Sora({
   subsets: ["latin"],
+  weight: ["400", "600", "700"],
+  variable: "--font-sora",
 })
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const outfit = Outfit({
   subsets: ["latin"],
+  weight: ["400", "500", "700"],
+  variable: "--font-outfit",
 })
 
 export const metadata: Metadata = {
@@ -23,11 +27,11 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <html lang="en" className={`${sora.variable} ${outfit.variable}`}>
+      <body className="relative">
+        <SiteHeader />
         {children}
+        <SiteFooter />
       </body>
     </html>
   )

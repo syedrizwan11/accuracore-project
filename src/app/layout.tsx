@@ -1,6 +1,19 @@
 import type { Metadata } from "next"
+import { Sora, Outfit } from "next/font/google"
 import "./globals.css"
 import { SiteHeader } from "@/components/SiteHeader"
+
+const sora = Sora({
+  subsets: ["latin"],
+  weight: ["400", "600", "700"],
+  variable: "--font-sora",
+})
+
+const outfit = Outfit({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
+  variable: "--font-outfit",
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -13,8 +26,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <body>
+    <html lang="en" className={`${sora.variable} ${outfit.variable}`}>
+      <body className="relative">
         <SiteHeader />
         {children}
       </body>

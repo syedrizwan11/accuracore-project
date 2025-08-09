@@ -20,14 +20,17 @@ export const DropDownButton = ({
 }: DropDownButtonProps) => {
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger asChild>
-        <button className="flex items-center gap-2">
+      <DropdownMenuTrigger
+        asChild
+        className="font-sora outline-0 cursor-pointer"
+      >
+        <button className="flex items-center gap-1">
           <span>{buttonText}</span>
-          <IoIosArrowDown className="mt-1 transition-transform duration-200 data-[state=open]:rotate-180" />
+          <IoIosArrowDown className="transition-transform duration-200 data-[state=open]:rotate-180" />
         </button>
       </DropdownMenuTrigger>
 
-      <DropdownMenuContent className="bg-blueLight text-white min-h-15">
+      <DropdownMenuContent className="text-sm bg-blueLight text-white min-h-15 font-sora">
         {dropMenu.map((el, indx) => (
           <div key={indx}>
             <DropdownMenuItem>{el.text}</DropdownMenuItem>

@@ -3,6 +3,27 @@
 
 @custom-variant dark (&:is(.dark *));
 
+* {
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #2f1893 #a2a0c7; /* Firefox */
+}
+
+*::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #a2a0c7;
+  border-radius: 6px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #2f1893;
+  border-radius: 6px;
+  border: 3px solid #f0f0f0;
+}
+
 :root {
   --background-image: radial-gradient(
     ellipse 40% 100% at center top,
@@ -14,6 +35,7 @@
   --blueDeepDark-rgb: 26, 44, 70;
   --blueLight: rgba(126, 144, 173, 0.5);
   --blueDark: #0b56ac;
+
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
@@ -46,6 +68,8 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+  --text-sm: 0.65rem;
+  --text-md: 1rem;
 }
 
 @theme inline {
@@ -59,8 +83,14 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-roboto: Arial, Helvetica, sans-serif;
+  --font-sora: var(--font-sora);
+  --font-outfit: var(--font-outfit);
+  --text-sm: var(--text-sm);
+  --text-md: var(--text-md);
 
   --spacing-contentStart: 7.5rem;
+  --breakpoint-large: 60rem;
+  --breakpoint-medium: 52rem;
 
   --color-sidebar-ring: var(--sidebar-ring);
 

@@ -18,7 +18,7 @@ export const CustomButton = ({
   return (
     <div
       className={cn(
-        "p-4 rounded-full px-5 flex justify-center w-fit gap-4",
+        "p-3 rounded-full px-5 flex justify-center items-center w-fit gap-2 text-[14px]",
         color ? `text-${color}` : "text-blueDeepDark",
         bgColor ? `bg-${bgColor}` : "bg-white"
       )}

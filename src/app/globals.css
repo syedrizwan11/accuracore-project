@@ -14,6 +14,7 @@
   --blueDeepDark-rgb: 26, 44, 70;
   --blueLight: rgba(126, 144, 173, 0.5);
   --blueDark: #0b56ac;
+  --blueDeep: #18223d;
 
   --radius: 0.625rem;
   --background: oklch(97.023% 0.00426 15.806);
@@ -58,6 +59,7 @@
   --color-blueLight: var(--blueLight);
   --color-foreground: var(--foreground);
   --color-blueDark: var(--blueDark);
+  --color-blueDeep: var(--blueDeep);
 
   --background-image-backgroundGradient: var(--background-image);
 

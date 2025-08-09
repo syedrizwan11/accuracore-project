@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import { Sora, Outfit } from "next/font/google"
 import "./globals.css"
 import { SiteHeader } from "@/components/SiteHeader"
+import { SiteFooter } from "@/components/SiteFooter"
 
 const sora = Sora({
   subsets: ["latin"],
@@ -30,6 +31,7 @@ export default function RootLayout({
       <body className="relative">
         <SiteHeader />
         {children}
+        <SiteFooter />
       </body>
     </html>
   )

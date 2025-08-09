@@ -3,7 +3,7 @@ import React from "react"
 
 export const FrequentlyAskedQuestionsSection = () => {
   return (
-    <div className="min-h-screen bg-background px-[5%] pt-20">
+    <div className="bg-background px-[5%] py-20">
       <div className="flex justify-between items-start gap-4 medium:flex-row flex-col">
         <div className="basis-2/5 text-heading font-sora">
           Frequently <br />

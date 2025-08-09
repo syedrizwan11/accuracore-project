@@ -47,7 +47,7 @@ export const WorkforceOrganizerSection = () => {
         </div>
       </div>
 
-      <div className="bg-[#18223d] relative rounded-[4rem] px-22 min-h-[65vh] mt-22 mb-4 overflow-hidden flex justify-center items-center text-center">
+      <div className="bg-blueDeep relative rounded-[4rem] px-22 min-h-[65vh] mt-22 mb-4 overflow-hidden flex justify-center items-center text-center">
         <Image
           src="/svgs/glowing-dotted-circles.svg"
           alt="dashboard-banner"

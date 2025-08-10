@@ -19,7 +19,13 @@ export const AnimatedCirclesAndImage = () => {
         />
       </div>
       <div className="absolute top-20 left-25">
-        <Image src="/images/stars.png" alt="stars" width={50} height={50} />
+        <Image
+          src="/images/stars.png"
+          priority
+          alt="stars"
+          width={50}
+          height={50}
+        />
       </div>
       <div
         className="absolute top-[50%] left-[50%] -translate-1/2"
@@ -29,6 +35,7 @@ export const AnimatedCirclesAndImage = () => {
           src="/images/banner-image-1.png"
           alt="banner-image"
           fill
+          priority
           style={{ objectFit: "contain" }}
         />
       </div>

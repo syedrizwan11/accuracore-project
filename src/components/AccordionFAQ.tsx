@@ -23,7 +23,7 @@ export const AccordionFAQ = ({ questions }: AccordionFAQProps) => {
         <AccordionItem
           key={indx + "-accord"}
           value={indx + "-accord"}
-          className="mb-4 bg-white shadow p-2 px-4 rounded-sm no-underline"
+          className="mb-4 bg-white shadow p-2 px-4 rounded-sm no-underline w-[90vw] medium:w-full"
         >
           <AccordionTrigger>{el.statement}</AccordionTrigger>
           <AccordionContent className="flex flex-col gap-4 text-balance">

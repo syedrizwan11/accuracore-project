@@ -30,7 +30,7 @@ export const DropDownButton = ({
         </button>
       </DropdownMenuTrigger>
 
-      <DropdownMenuContent className="text-sm bg-blueLight text-white min-h-15 font-sora">
+      <DropdownMenuContent className="text-sm bg-[#556684] text-white min-h-22 font-sora border-gray-400">
         {dropMenu.map((el, indx) => (
           <div key={indx}>
             <DropdownMenuItem>{el.text}</DropdownMenuItem>

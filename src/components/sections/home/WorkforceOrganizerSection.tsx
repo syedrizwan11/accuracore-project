@@ -62,7 +62,7 @@ export const WorkforceOrganizerSection = () => {
           height={600}
           className="absolute bottom-[-17rem] right-[-17rem] -rotate-10"
         />
-        <div className="text-5xl font-semibold text-white font-sora">
+        <div className="text-5xl font-semibold text-white font-sora py-10">
           <span>Loved by people</span>
           <Image
             className="inline"

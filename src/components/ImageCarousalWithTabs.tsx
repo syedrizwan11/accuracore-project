@@ -4,29 +4,6 @@ import { useState } from "react"
 import Image from "next/image"
 import { cn } from "@/lib/utils"
 
-const slides = [
-  {
-    title: "Work Order Management",
-    image: "/images/work-order-management.png",
-  },
-  {
-    title: "Smart Dashboard",
-    image: "/images/smart-dashboard.png",
-  },
-  {
-    title: "Boards",
-    image: "/images/boards.png",
-  },
-  {
-    title: "Contact Profiles",
-    image: "/images/contact-profiles.png",
-  },
-  {
-    title: "Calendar",
-    image: "/images/calendar.png",
-  },
-]
-
 export const ImageCarousalWithTabs = () => {
   const [activeIndex, setActiveIndex] = useState(1)
 
@@ -89,3 +66,26 @@ export const ImageCarousalWithTabs = () => {
     </div>
   )
 }
+
+const slides = [
+  {
+    title: "Work Order Management",
+    image: "/images/work-order-management.png",
+  },
+  {
+    title: "Smart Dashboard",
+    image: "/images/smart-dashboard.png",
+  },
+  {
+    title: "Boards",
+    image: "/images/boards-section.png",
+  },
+  {
+    title: "Contact Profiles",
+    image: "/images/contact-profiles.png",
+  },
+  {
+    title: "Calendar",
+    image: "/images/calendar-section.png",
+  },
+]

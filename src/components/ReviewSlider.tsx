@@ -6,27 +6,6 @@ import "swiper/css/pagination"
 import Image from "next/image"
 import { FaStar } from "react-icons/fa6"
 
-const reviews = [
-  {
-    name: "Sarah Malik",
-    text: "Accuracore Transformed How We Manage Our Daily Operations. Everything Is In One Place — From Tasks To Invoices. It's Like Having A Full Operations Team Inside One Dashboard.",
-    image: "/images/sarah.png",
-    stars: 5,
-  },
-  {
-    name: "Sarah Malik",
-    text: "Accuracore Transformed How We Manage Our Daily Operations. Everything Is In One Place — From Tasks To Invoices. It's Like Having A Full Operations Team Inside One Dashboard.",
-    image: "/images/sarah.png",
-    stars: 3,
-  },
-  {
-    name: "Sarah Malik",
-    text: "Accuracore Transformed How We Manage Our Daily Operations. Everything Is In One Place — From Tasks To Invoices. It's Like Having A Full Operations Team Inside One Dashboard.",
-    image: "/images/sarah.png",
-    stars: 3,
-  },
-]
-
 export const ReviewSlider = () => {
   return (
     <>
@@ -94,3 +73,24 @@ export const ReviewSlider = () => {
     </>
   )
 }
+
+const reviews = [
+  {
+    name: "Sarah Malik",
+    text: "Accuracore Transformed How We Manage Our Daily Operations. Everything Is In One Place — From Tasks To Invoices. It's Like Having A Full Operations Team Inside One Dashboard.",
+    image: "/images/sarah.png",
+    stars: 5,
+  },
+  {
+    name: "Sarah Malik",
+    text: "Accuracore Transformed How We Manage Our Daily Operations. Everything Is In One Place — From Tasks To Invoices. It's Like Having A Full Operations Team Inside One Dashboard.",
+    image: "/images/sarah.png",
+    stars: 3,
+  },
+  {
+    name: "Sarah Malik",
+    text: "Accuracore Transformed How We Manage Our Daily Operations. Everything Is In One Place — From Tasks To Invoices. It's Like Having A Full Operations Team Inside One Dashboard.",
+    image: "/images/sarah.png",
+    stars: 3,
+  },
+]

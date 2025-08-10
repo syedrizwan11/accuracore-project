@@ -42,7 +42,7 @@ export const ReviewSlider = () => {
       >
         {reviews.map((review, i) => (
           <SwiperSlide key={i}>
-            <div className="flex medium:flex-row flex-col gap-6 items-center bg-white rounded-full p-8 mx-[10%] my-22">
+            <div className="flex medium:flex-row flex-col gap-6 items-center bg-white rounded-full py-8 medium:px-8 px-15 mx-[10%] my-22">
               <div className="basis-1/2 relative rounded-full">
                 <Image
                   src="/svgs/glowing-dotted-circles.svg"
@@ -60,8 +60,12 @@ export const ReviewSlider = () => {
                 />
               </div>
               <div className="basis-2/5">
-                <h3 className="font-bold font-sora">{review.name}</h3>
-                <p className="font-outfit">{review.text}</p>
+                <h3 className="font-bold font-sora sm:px-10 medium:px-0">
+                  {review.name}
+                </h3>
+                <p className="font-outfit sm:px-10 medium:px-0">
+                  {review.text}
+                </p>
                 <div className="mt-10 flex justify-center medium:justify-start gap-1 mb-4">
                   {Array.from({ length: review.stars }).map((el, indx) => (
                     <FaStar key={indx} className="text-yellow-400" />

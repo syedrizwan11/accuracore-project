@@ -17,7 +17,7 @@ export const HowItWorksSection = () => {
         Streamlines Workflows, And Puts You In Control.
       </div>
 
-      <div className="flex justify-between items-center gap-4 medium:flex-row flex-col">
+      <div className="flex justify-between items-center gap-4 medium:flex-row flex-col mb-10 medium:mb-0">
         <Card
           heading="Create Your Company"
           text="Create Your Workspace In Minutes &mdash; Then Invite Your Team To Collaborate."

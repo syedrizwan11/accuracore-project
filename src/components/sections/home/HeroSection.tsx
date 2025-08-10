@@ -8,7 +8,7 @@ export const HeroSection = () => {
       <div className="bg-backgroundGradient pt-contentStart px-[5%] bg-no-repeat bg-[center_top] bg-blueDeepDark min-h-screen min-w-screen text-white font-sora overflow-hidden">
         <div className="flex justify-between items-center gap-4 flex-col medium:flex-row">
           <div>
-            <div className="text-5xl">
+            <div className="text-5xl font-sora pt-10 mb-4">
               Streamline Your
               <br /> Business <span className="font-semibold">All-in-One</span>
               <br /> Precision Platform.
